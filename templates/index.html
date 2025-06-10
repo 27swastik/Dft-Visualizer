@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DFT Visualizer</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h2>DFT Visualizer</h2>
+    <form id="signal-form">
+        Waveform: <select name="waveform">
+            <option value="sine">Sine</option>
+            <option value="square">Square</option>
+            <option value="composite">Composite</option>
+        </select><br>
+        Frequency: <input name="frequency" type="number" value="10"><br>
+        Amplitude: <input name="amplitude" type="number" value="1"><br>
+        Duration: <input name="duration" type="number" value="1"><br>
+        Sampling Rate: <input name="sampling_rate" type="number" value="1000"><br>
+        <button type="submit">Generate & Transform</button>
+    </form>
+
+    <div id="time-domain"></div>
+    <div id="magnitude"></div>
+    <div id="phase"></div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
