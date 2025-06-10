@@ -49,5 +49,4 @@ http://localhost:5000
 └── README.md            # Project description
 ```
 
-## License
-MIT License
+
